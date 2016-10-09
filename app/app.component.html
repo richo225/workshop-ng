@@ -1,7 +1,10 @@
-<StackLayout>
-    <Label text="Tap the button" class="title"></Label>
-    
-    <Button text="TAP" (tap)="onTap()"></Button>
+<ActionBar title="Adopt A Kitten!"></ActionBar>
 
-    <Label [text]="message" class="message" textWrap="true"></Label>
-</StackLayout>
+<ScrollView>
+  <WrapLayout horizontalAlignment="center">
+    <StackLayout class="card" (tap)="animate(card)" #card width="40%" *ngFor="let kitten of kittens" horizontalAlignment="center">
+      <Image [src]="kitten"></Image>
+      <Label text="kitties!!!" horizontalAlignment="center" class="text"></Label>
+    </StackLayout>
+  </WrapLayout>
+</ScrollView>

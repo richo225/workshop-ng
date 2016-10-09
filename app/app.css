@@ -1,19 +1,53 @@
 ﻿button, label, stack-layout {
-    horizontal-align: center;    
+    horizontal-align: center;
 }
 
 button {
-    font-size: 36;
+  font-size: 36;
+}
+
+Page {
+    background-color: #EBEBD3;
+}
+
+ActionBar {
+    background-color: #083D77;
+    color: #EBEBD3;
 }
 
 .title {
-    font-size: 30;
-    margin: 20;
+  font-size: 30;
+  margin: 20;
 }
 
 .message {
-    font-size: 20;
-    color: #284848;
-    text-align: center;
-    margin: 0 20;
-} 
+  font-size: 20;
+  color: #284848;
+  text-align: center;
+  margin: 0 20;
+}
+
+label {
+  font-size: 15;
+  color: #083D77;
+  text-align: center;
+}
+
+image {
+  border-color: #083D77;
+  border-width: 2;
+}
+
+.card {
+  background-color: #DA4167;
+  margin: 10;
+  border-radius: 5;
+  animation-name: card;
+  animation-duration: 4s;
+  opacity: 0;
+}
+
+@keyframes card {
+  from { opacity: 0 }
+  to { opacity: 1}
+}
